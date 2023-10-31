@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.container-main{
+   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.div-menor{
+    background-color: rgba(0, 0, 0, 0.575);
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 1em;
+    color: aliceblue;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+img{
+    width: 10em;
+    margin-bottom: 1em;
+}
+
+.caixa-de-numeros{
+    display: flex;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+input{
+    border: solid;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.inpuit .input-number1{
+    
+    background: rgba(0, 0, 0, 0.281);
+}
+
+button{
+    padding: 1em;
+    border-radius: 2em;
+    background: red;
+    margin-left: 10em;
+    margin-bottom: 3em;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover{
+    opacity: .5;
+}
+
+button:active{
+    opacity: .8;
+}
+
+.espaco-do-numero-sorteado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
