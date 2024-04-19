@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,8 +6,8 @@
     font-family: sans-serif;
 }
 
-.container-main{
-   
+.container-main {
+
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -17,64 +17,198 @@
     background: black;
 }
 
-.div-menor{
+.div-menor {
+    width: 70vw;
+    height: 90vh;
     background-color: rgba(0, 0, 0, 0.575);
-    border: 1px solid;
-    padding: 10px;
     border-radius: 1em;
     color: aliceblue;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2em;
+    font-size: 2vh;
 }
 
-img{
-    width: 10em;
+img {
+    width: 15vw;
     margin-bottom: 1em;
 }
 
-.caixa-de-numeros{
+.numeracoes {
     display: flex;
-    gap: 2em;
-    margin-bottom: 2em;
+    flex-direction: column;
 }
 
-input{
-    border: solid;
+.caixa-de-numeros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5vh;
+    margin-bottom: 2em;
+    font-size: 3vh;
+}
+
+.box-number {
+    border: solid 0.5px;
     border-radius: 1em;
     padding: 1em;
     margin-top: 1em;
 }
 
-.inpuit .input-number1{
-    
-    background: rgba(0, 0, 0, 0.281);
+input {
+    width: 100%;
+    height: 40%;
+    border-radius: 15px;
+    margin-top: 1vh;
+    padding: 1em;
+    font-size: 3vh;
 }
 
-button{
-    padding: 1em;
-    border-radius: 2em;
+.div-button {
+    display: flex;
+}
+
+button {
+    width: 50vw;
+    height: 7vh;
+    font-size: 2vh;
+    color: aliceblue;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1vh;
     background: red;
-    margin-left: 10em;
-    margin-bottom: 3em;
-    cursor: pointer;
     border: none;
 }
 
-button:hover{
+button:hover {
     opacity: .5;
+    transition: .5s;
+    background-color: rgb(47, 47, 199);
 }
 
-button:active{
+button:active {
+    background-color: red;
     opacity: .8;
 }
 
-.espaco-do-numero-sorteado{
+.espaco-do-numero-sorteado {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 5vh;
+    text-align: center;
+    margin-top: 2vh;
+    padding: 0 10vw;
+}
+
+span {
+    text-transform: uppercase;
+    color: red;
+    font-size: 3vh;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+    .container-main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(75, 63, 63, 0.416);
+    }
+
+    .div-menor {
+        background-color: rgb(0, 0, 0);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid;
+        border-radius: 1em;
+        color: aliceblue;
+    }
+
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2vh;
+        padding-right: 1.3vh;
+    }
+
+    img {
+        width: 10em;
+        margin-bottom: 1em;
+    }
+
+    .caixa-de-numeros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-number {
+        margin: 0;
+        border: 1px solid;
+        border-radius: 1em;
+        padding: 1em;
+        font-size: 2.1vh;
+        font-weight: 600;
+    }
+
+    .div-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    button {
+        color: aliceblue;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 1em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1vh;
+        background: red;
+        border: none;
+    }
+
+    button:hover {
+        opacity: .5;
+    }
+
+    button:active {
+        opacity: .8;
+        background-color: blue;
+        transition: 0.5s;
+    }
+
+    .espaco-do-numero-sorteado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4vh;
+    }
+
+    .span-resultado {
+        text-transform: uppercase;
+        color: red;
+        font-size: 3vh;
+        text-align: center;
+        padding: 0px 6vh;
+        font-weight: 600;
+
+    }
 }
